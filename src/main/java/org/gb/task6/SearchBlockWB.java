@@ -1,5 +1,6 @@
 package org.gb.task6;
 
+import io.qameta.allure.Step;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -22,6 +23,7 @@ public class SearchBlockWB extends BasePageWB {
     @FindBy(id = searchButtonIdLocator)
     private WebElement searchButton;
 
+    @Step("Ввод строки поиска")
     // ввод значения в поле ввода строки поиска
     public SearchBlockWB enterSearchString(String searchString) {
         // ожидание, пока прогрузится поле поиска
@@ -31,6 +33,7 @@ public class SearchBlockWB extends BasePageWB {
         return this;
     }
 
+    @Step("Нажатие кнопки поиска")
     // нажатие кнопки поиска
     public GoodCardPageWB clickSearch() {
         searchButton.click();

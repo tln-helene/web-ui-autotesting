@@ -1,5 +1,6 @@
 package org.gb.task6;
 
+import io.qameta.allure.Step;
 import org.gb.lesson6.BasePage;
 import org.gb.lesson6.SuccessAddToCardPage;
 import org.junit.jupiter.api.Assertions;
@@ -23,6 +24,7 @@ public class GoodCardPageWB extends BasePageWB {
     @FindBy(xpath = articleFieldXPathLocator)
     private WebElement articleField;
 
+    @Step("Проверка соответствия артикула в карточке товара")
     // проверка соответствия артикула на странице заданному значению
     public void /*GoodCardPageWB*/ checkArticle(String sArticle) {
         // ожидание, пока прогрузися артикул на новой странице
