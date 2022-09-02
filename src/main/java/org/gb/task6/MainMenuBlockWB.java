@@ -1,5 +1,6 @@
 package org.gb.task6;
 
+import io.qameta.allure.Step;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -13,6 +14,7 @@ public class MainMenuBlockWB extends BasePageWB {
 //    private WebElement catalogItem;
 //    переменные использовать в аннтотации нельзя, можно так описать только конкретный элемент
 
+    @Step("Нажатие пункта меню каталога")
     // нажатие пункта меню каталога с заданным названием
     public MainPageWB clickCatalogItemLink(String sCatalogSection) {
         // собираем xPath для пункта меню верхнего раздела каталога

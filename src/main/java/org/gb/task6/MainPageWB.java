@@ -1,5 +1,6 @@
 package org.gb.task6;
 
+import io.qameta.allure.Step;
 import org.junit.jupiter.api.Assertions;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -29,6 +30,7 @@ public class MainPageWB extends BasePageWB {
     @FindBy(xpath = hamburgerButtonXPathLocator)
     private WebElement hamburgerButton;
 
+    @Step("Нажатие кнопки логина")
     // нажатие кнопки логина
     public LoginPageWB clickLoginButton() { // возвращает страницу, которая открывается по клику на кнопку логина
         // ожидание, пока прогрузится кнопка входа
@@ -38,6 +40,7 @@ public class MainPageWB extends BasePageWB {
         return new LoginPageWB(driver);
     }
 
+    @Step("Нажатие кнопки-гамбургера")
     // нажатие кнопки-"гамбургера" (меню)
     public MainMenuBlockWB clickHamburgerButton() { // возвращает блок меню, который откроется по клику на кнопку-"гамбургер"
         // ожидание, пока прогрузится кнопка меню
@@ -47,6 +50,7 @@ public class MainPageWB extends BasePageWB {
         return this.mainMenuBlock;
     }
 
+    @Step("Проверка соответствия открытой ссылки")
     // проверка соответствия текущей открытой ссылки заданному значению ссылки
     public MainPageWB checkOpenedLink(String sLinkExpected) {
         // сравнение тестового значения ссылки со ссылкой текущей страницы

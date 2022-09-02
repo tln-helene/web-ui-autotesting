@@ -1,4 +1,0 @@
--------------------------------------------------------------------------------
-Test set: org.gb.task4.TriangleTest
--------------------------------------------------------------------------------
-Tests run: 21, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.47 s - in org.gb.task4.TriangleTest
