@@ -19,9 +19,7 @@ import org.openqa.selenium.logging.LogEntry;
 import org.openqa.selenium.logging.LogType;
 import org.openqa.selenium.support.events.EventFiringDecorator;
 
-////////////
 import java.io.ByteArrayInputStream;
-////////////
 import static org.openqa.selenium.OutputType.BYTES;
 
 @Story("Открытая часть сайта WB")  // название просто для примера

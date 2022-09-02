@@ -1,5 +1,7 @@
 package org.gb.lesson6;
 
+import org.gb.task6.MainMenuBlockWB;
+import org.gb.task6.SearchBlockWB;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -22,6 +24,7 @@ public class MainPage extends BasePage {
  */
     public MainPage(WebDriver driver) {
         super(driver);
+        this.mainMenuBlock = new MainMenuBlock(driver);
     }
 
     @FindBy(xpath = "//a[@class='login']")
